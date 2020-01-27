@@ -27,7 +27,7 @@ export default function CharacterList() {
       </nav>
       {
         <SearchForm characters={characters} />
-      })
+      }
     </section>
   );
 }
