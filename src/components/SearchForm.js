@@ -4,19 +4,25 @@ import CharacterCard from "./CharacterCard";
 export default function SearchForm({ characters }) {
   const [filteredItems, setFilteredItems] = useState([]);
 
+  
+
   const handleChange = (e) => {
     let currentCharacters = [];
     let newCharacters = [];
 
     if (e.target.value !== "") {
-      newCharacters = filteredItems.filter(person => {
-        const lowerCase = person.toLowerCase();
+      currentCharacters = characters;
+
+      newCharacters = currentCharacters.filter(person => {
+        const lowerCase = person.name.toLowerCase();
         const filter = e.target.value.toLowerCase();
-        return lowerCase(filter);
+        return lowerCase.includes(filter);
       });
+    } else {
+        newCharacters = characters;
+      };
 
       setFilteredItems(newCharacters);
-    }
   };
 
   const search = (e) => {
