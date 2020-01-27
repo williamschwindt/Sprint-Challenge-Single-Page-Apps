@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: It avoids making unnecessary requests to the server when olny a portion of the page has changed by loading most parts of the page in the first request.
 
 ## Project Set Up
 
