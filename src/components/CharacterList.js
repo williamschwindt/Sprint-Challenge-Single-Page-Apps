@@ -22,7 +22,9 @@ export default function CharacterList() {
 
   return (
     <section className="character-list">
-      <Link to="/">Home</Link>
+      <nav>
+        <Link className="link" to="/">Home</Link>
+      </nav>
       {
         <SearchForm characters={characters} />
       })

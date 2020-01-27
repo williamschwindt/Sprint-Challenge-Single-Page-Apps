@@ -4,6 +4,14 @@ body {
   font-family: sans-serif;
 }
 
+h1, h2 {
+  text-align: center;
+}
+
+p {
+  margin: 5px 0;
+}
+
 main {
   width: 85vw;
   min-height: 80vh;
@@ -27,13 +35,32 @@ main {
 .grid-view div.card.ui {
   margin: 1.25rem;
 }
-/*
-.main-img {
-  display: block;
+
+img {
   border-radius: 100%;
-  margin: 0 auto;
-} */
+  border: 1px solid black;
+} 
 
 header h1 {
   text-align: center;
 }
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+}
+
+.link {
+  text-decoration: none;
+  color: rgb(52, 52, 221);
+  font-size: 20px;
+}
+
+.characters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
